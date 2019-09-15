@@ -182,4 +182,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CustomPixelLauncherOverlay
 
+# Fonts
+include vendor/proton/config/fonts.mk
+
 include vendor/proton/config/version.mk
