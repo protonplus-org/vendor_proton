@@ -180,6 +180,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CustomPixelLauncherOverlay
 
+# Themes
+PRODUCT_PACKAGES += \
+    BlackTheme
+
 # BootAnimation
 include vendor/proton/config/bootanimation.mk
 
