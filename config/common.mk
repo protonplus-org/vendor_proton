@@ -88,6 +88,10 @@ PRODUCT_COPY_FILES += \
     vendor/proton/prebuilt/common/etc/init/init.proton-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.proton-updater.rc
 endif
 
+# Charger
+PRODUCT_PACKAGES += \
+    product_charger_res_images
+
 # Config
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
