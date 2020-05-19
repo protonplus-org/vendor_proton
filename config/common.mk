@@ -207,7 +207,8 @@ PRODUCT_PACKAGES += \
     Aperture
 
 PRODUCT_PACKAGES += \
-    NetworkStackOverlay
+    NetworkStackOverlay \
+    NavigationBarNoHintOverlay
 
 # Fonts
 include vendor/proton/config/fonts.mk
