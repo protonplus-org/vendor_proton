@@ -31,6 +31,7 @@ SOONG_CONFIG_protonGlobalVars += \
     additional_gralloc_10_usage_bits \
     needs_camera_boottime \
     target_init_vendor_lib \
+    target_inputdispatcher_skip_event_key \
     target_ld_shim_libs \
     target_surfaceflinger_udfps_lib \
     target_trust_usb_control_path \
@@ -58,6 +59,7 @@ SOONG_CONFIG_protonQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PR
 # Set default values
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
 TARGET_INIT_VENDOR_LIB ?= vendor_init
+TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY ?= 0
 TARGET_SURFACEFLINGER_UDFPS_LIB ?= surfaceflinger_udfps_lib
 TARGET_TRUST_USB_CONTROL_PATH ?= /proc/sys/kernel/deny_new_usb
 TARGET_TRUST_USB_CONTROL_ENABLE ?= 1
@@ -66,6 +68,7 @@ TARGET_TRUST_USB_CONTROL_DISABLE ?= 0
 # Soong value variables
 SOONG_CONFIG_protonGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS)
 SOONG_CONFIG_protonGlobalVars_target_init_vendor_lib := $(TARGET_INIT_VENDOR_LIB)
+SOONG_CONFIG_protonGlobalVars_target_inputdispatcher_skip_event_key := $(TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY)
 SOONG_CONFIG_protonGlobalVars_target_ld_shim_libs := $(subst $(space),:,$(TARGET_LD_SHIM_LIBS))
 SOONG_CONFIG_protonGlobalVars_target_surfaceflinger_udfps_lib := $(TARGET_SURFACEFLINGER_UDFPS_LIB)
 SOONG_CONFIG_protonGlobalVars_target_trust_usb_control_path := $(TARGET_TRUST_USB_CONTROL_PATH)
