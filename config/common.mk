@@ -58,6 +58,10 @@ PRODUCT_COPY_FILES += \
     vendor/proton/prebuilt/common/etc/init/init.proton-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.proton-system_ext.rc
 
 
+# Enable gestural navigation overlay to match default navigation mode
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+
 # priv-app permissions
 PRODUCT_COPY_FILES += \
     vendor/proton/prebuilt/common/etc/permissions/priv-app_system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/priv-app_system.xml
