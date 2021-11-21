@@ -178,4 +178,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
+# CustomPixelLauncherOverlay
+PRODUCT_PACKAGES += \
+    CustomPixelLauncherOverlay
+
 include vendor/proton/config/version.mk
