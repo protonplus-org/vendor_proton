@@ -18,5 +18,8 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/proton/overlay
 # Framework overlay needs to be a RRO
 PRODUCT_ENFORCE_RRO_TARGETS += framework-res
 
+# Inherit from rro_overlays config
+$(call inherit-product, vendor/proton/overlay/rro_overlays.mk)
+
 # Lawnicons
 $(call inherit-product-if-exists, vendor/lawnicons/overlay.mk)
