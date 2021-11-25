@@ -114,6 +114,10 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/getcap \
     system/bin/setcap
 
+# Navbar
+PRODUCT_PACKAGES += \
+    NavigationBarModeGesturalOverlayFS
+
 # Openssh
 PRODUCT_PACKAGES += \
     scp \
