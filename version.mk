@@ -13,6 +13,8 @@
 # limitations under the License.
 
 CUSTOM_ROM_VERSION := 12.2.0
+PROTON_HOST_TIME := $(shell date +"%Y%m%d-%H%M")
+PROTON_BUILD_VERSION := ProtonAOSP-$(CUSTOM_ROM_VERSION)-$(PROTON_HOST_TIME)
 
 ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.build.version.custom=$(CUSTOM_ROM_VERSION)
