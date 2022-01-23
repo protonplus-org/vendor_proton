@@ -75,8 +75,11 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# protonplus packages
+PRODUCT_PACKAGES += \
+    RepainterServicePriv
+
 ifeq ($(PROTON_BUILD_VARIANT),OFFICIAL)
-# ProtonPlus packages
 PRODUCT_PACKAGES += \
     Updater
 
