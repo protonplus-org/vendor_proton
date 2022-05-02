@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-CUSTOM_ROM_VERSION := 12.3.1-test1+1.1
+CUSTOM_ROM_VERSION := 12.3.1-test1+1.2
 CUSTOM_ROM_VERSION_MAJOR := SnowCone
 PROTON_HOST_TIME := $(shell date +"%Y%m%d-%H%M")
 TARGET_PRODUCT_SHORT := $(subst aosp_,,$(TARGET_DEVICE))

@@ -9,7 +9,7 @@ blu=$'\e[1;34m'
 end=$'\e[0m'
 
 REMOTE="ProtonPlus"
-BRANCH="sc"
+BRANCH="sc-v2"
 
 BLACKLIST="manifest"
 
