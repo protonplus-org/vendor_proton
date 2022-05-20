@@ -14,7 +14,7 @@
 
 CUSTOM_ROM_VERSION := 12.3.1+1.2
 CUSTOM_ROM_VERSION_MAJOR := SnowCone
-PROTON_HOST_TIME := $(shell date +"%Y%m%d-%H%M")
+PROTON_HOST_TIME := $(shell date -u +%Y%m%d_%H%M%S)
 TARGET_PRODUCT_SHORT := $(subst aosp_,,$(TARGET_DEVICE))
 
 ifeq ($(PROTONPLUS_BUILD_VARIANT),OFFICIAL)
@@ -25,4 +25,6 @@ endif
 
 ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.build.version.custom=$(CUSTOM_ROM_VERSION) \
-    ro.build.version.device=$(TARGET_PRODUCT_SHORT)
+    ro.build.version.device=$(TARGET_PRODUCT_SHORT) \
+    ro.proton.build.version=$(CUSTOM_ROM_VERSION) \
+    ro.modversion=$(CUSTOM_ROM_VERSION) 
