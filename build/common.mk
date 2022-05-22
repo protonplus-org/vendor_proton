@@ -32,6 +32,9 @@ PRODUCT_COPY_FILES += \
 
 endif
 
+# Use the default charger mode images
+PRODUCT_PACKAGES += \
+    charger_res_images
 
 # Disable remote keyguard animation
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
