@@ -9,5 +9,6 @@ PRODUCT_PACKAGES += \
     FontInterOverlay \
     FontManropeOverlay \
     FontOneplusSlateSourceOverlay \
+    FontOppoSansOverlay \
     RobotoFallback-VF.ttf 
 
