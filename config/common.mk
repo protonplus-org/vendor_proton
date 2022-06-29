@@ -23,6 +23,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.ime.kb_pad_land_l=64 \
     ro.com.google.ime.kb_pad_land_r=64
 
+
+# Google LILY_EXPERIENCE feature
+PRODUCT_COPY_FILES += \
+    vendor/proton/prebuilt/common/etc/sysconfig/lily_experience.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/lily_experience.xml
+
 ifeq ($(TARGET_BUILD_VARIANT),eng)
 # Disable ADB authentication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
