@@ -206,6 +206,9 @@ endif
 PRODUCT_PACKAGES += \
     Aperture
 
+PRODUCT_PACKAGES += \
+    NetworkStackOverlay
+
 # Fonts
 include vendor/proton/config/fonts.mk
 
