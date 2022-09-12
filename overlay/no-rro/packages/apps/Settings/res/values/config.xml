@@ -8,7 +8,9 @@
     <!-- Manufacturer backup settings to launch -->
     <string name="config_backup_settings_intent" translatable="false">settings://com.android.settings.backup.transport</string>
 
-    <!-- Manufacturer backup settings label -->
-    <string name="config_backup_settings_label" translatable="true">@string/backup_transport_setting_label</string>
+    <string-array name="config_ignored_backup_transports" translatable="false">
+        <item>com.android.localtransport/.LocalTransport</item>
+        <item>com.google.android.gms/.backup.migrate.service.D2dTransport</item>
+    </string-array>
 
 </resources>
