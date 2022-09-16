@@ -29,6 +29,7 @@ $(foreach v,$(EXPORT_TO_SOONG),$(eval $(call addVar,$(v))))
 SOONG_CONFIG_NAMESPACES += protonGlobalVars
 SOONG_CONFIG_protonGlobalVars += \
     additional_gralloc_10_usage_bits \
+    gralloc_handle_has_reserved_size \
     needs_camera_boottime \
     target_init_vendor_lib \
     target_inputdispatcher_skip_event_key \
@@ -51,6 +52,7 @@ SOONG_CONFIG_protonQcomVars += \
 endif
 
 # Soong bool variables
+SOONG_CONFIG_protonGlobalVars_gralloc_handle_has_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE)
 SOONG_CONFIG_protonGlobalVars_needs_camera_boottime := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
 SOONG_CONFIG_protonGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
 SOONG_CONFIG_protonQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
@@ -58,6 +60,7 @@ SOONG_CONFIG_protonQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PR
 
 # Set default values
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
+TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE ?= false
 TARGET_INIT_VENDOR_LIB ?= vendor_init
 TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY ?= 0
 TARGET_SURFACEFLINGER_UDFPS_LIB ?= surfaceflinger_udfps_lib
