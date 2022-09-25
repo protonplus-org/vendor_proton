@@ -4,10 +4,6 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 # telephony
 $(call inherit-product, vendor/proton/config/telephony.mk)
 
-PRODUCT_BRAND ?= ProtonPlus
-
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.com.google.clientidbase=android-google
@@ -173,5 +169,9 @@ PRODUCT_PACKAGE_OVERLAYS += \
 # Enable support of one-handed mode
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.support_one_handed_mode=true
+
+# Use the default charger mode images
+PRODUCT_PACKAGES += \
+    charger_res_images
 
 include vendor/proton/config/version.mk
