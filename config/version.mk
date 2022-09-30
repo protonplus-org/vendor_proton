@@ -1,6 +1,6 @@
 PRODUCT_VERSION_MAJOR := 13
 PRODUCT_VERSION_MINOR := 0
-PRODUCT_VERSION_TAG := Beta
+PRODUCT_VERSION_TAG := Stable
 
 TARGET_PRODUCT_SHORT := $(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
 PROTON_HOST_TIME := $(shell date -u +%Y%m%d-%H%M%S)
