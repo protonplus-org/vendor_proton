@@ -189,3 +189,6 @@ PRODUCT_PACKAGES += \
 include vendor/proton/config/fonts.mk
 
 include vendor/proton/config/version.mk
+
+# bootanim
+$(call inherit-product, vendor/proton/bootanimation/bootanimation.mk)
