@@ -180,6 +180,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CustomPixelLauncherOverlay
 
+# BootAnimation
+include vendor/proton/config/bootanimation.mk
+
 # Fonts
 include vendor/proton/config/fonts.mk
 
