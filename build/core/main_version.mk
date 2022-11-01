@@ -7,7 +7,7 @@ endif
 # ProtonPlus System Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.proton.version=$(PROTON_VERSION) \
-    ro.proton.releasetype=$(PROTON_BUILD_VARIANT) \
+    ro.proton.releasetype=$(RELEASE_TYPE) \
     ro.proton.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
     ro.modversion=$(PROTON_VERSION) 
 
