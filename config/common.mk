@@ -185,8 +185,9 @@ PRODUCT_PACKAGES += \
 
 # Themes
 PRODUCT_PACKAGES += \
-    BlackTheme
-
+    BlackTheme \
+    ThemePicker
+    
 # BootAnimation
 include vendor/proton/config/bootanimation.mk
 
