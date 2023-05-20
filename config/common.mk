@@ -14,7 +14,9 @@ endif
 
 # Google apps and services
 
+ifeq ($(WITH_GAPPS),true)
 $(call inherit-product, vendor/gms/products/*.mk)
+endif
 
 # Gboard side padding
 PRODUCT_PRODUCT_PROPERTIES += \
