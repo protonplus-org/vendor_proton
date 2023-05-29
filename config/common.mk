@@ -216,6 +216,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NetworkStackOverlay
 
+ifneq ($(WITH_GAPPS),true)
+PRODUCT_PACKAGES += \
+    Eleven \
+    Etar \
+    ExactCalculator \
+    Jelly
+endif
+
 # Fonts
 include vendor/proton/config/fonts.mk
 
