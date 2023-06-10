@@ -217,6 +217,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NetworkStackOverlay
 
+# Prebuilt packages
+PRODUCT_PACKAGES += \
+    MlkitBarcodeUIPrebuilt
+
 # Fonts
 include vendor/proton/config/fonts.mk
 
