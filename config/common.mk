@@ -235,6 +235,11 @@ PRODUCT_PACKAGES += \
     Jelly
 endif
 
+ifneq ($(WITH_GAPPS),true)
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/proton/overlay/aperture
+endif
+
 # Fonts
 include vendor/proton/config/fonts.mk
 
